@@ -28,6 +28,7 @@ To run python script, just type the following command
 
 `-u` **Required** - The url which contains images or videos. Supported links: pixl.is, cyberdrop.me, putme.ga, bunkr.is 
 `-p` **Optional** -  Show progress bar from each url. By default its False
+
 `-w` **Optional** - MAX_WORKERS. Define the maximum amount of workers for downloading. By default are 20 and its fast enough
 
 By default displays the progress bar for downloaded files.
