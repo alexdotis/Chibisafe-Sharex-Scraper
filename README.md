@@ -16,7 +16,7 @@ If you already have Git installed, you can use `git clone`
 
 > For Windows
 
-Add Python to your PATH [Here](https://docs.python.org/3/using/windows.html)
+Add Python to your PATH [Using Python on Windows](https://docs.python.org/3/using/windows.html)
 
 # Run Script
 
