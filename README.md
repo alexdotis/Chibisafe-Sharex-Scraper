@@ -22,7 +22,7 @@ Add Python to your PATH [Here](https://docs.python.org/3/using/windows.html)
 
 To run python script, just type the following command
 
-`python3 main -u <url>`
+`python3 main.py -u <url>`
 
 # Commands
 
