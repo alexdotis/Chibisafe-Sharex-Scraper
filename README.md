@@ -4,33 +4,35 @@ Simple Script written in Python for download galleries of images / videos
 
 # Supported links:
 
-* cyberdrop.me 
-* bunkr.is 
-* pixl.is 
-* putme.ga
+- <cyberdrop.me>
+- <bunkr.is>
+- <pixl.is>
+- <putme.ga>
 
 # Installation
 
-If you already have Git installed, you can use `git clone`
-1. You need to install the packages according to the configuration file with the following command `pip3 install -r requirements.txt`
+You will need to install [git](https://git-scm.com/), and then run `git clone [repository url]`
+from your terminal/cmd.
 
-> For Windows
+To run this, you will also need [python](https://www.python.org/), if you will be installing
+from windows, also don't forget to check Add to PATH box during the installation!
 
-Add Python to your PATH [Using Python on Windows](https://docs.python.org/3/using/windows.html)
+After that, you will need to install the needed python packages. To do that, run
+`pip3 install -r requirements.txt` (if that won't work, you can also try
+`python3 -m pip install ...`)
 
 # Run Script
 
 To run python script, just type the following command
-
 `python3 main.py -u <url>`
 
-# Commands
+# Command usage
 
 `-u` **Required** - The url which contains images or videos. Supported links: `pixl.is`, `cyberdrop.me`, `putme.ga`, `bunkr.is`
 
-`-p` **Optional** -  Show progress bar from each url. By default its False
+`-p` **Optional** -  Show progress bar from each url. By default it's False
 
-`-w` **Optional** - MAX_WORKERS. Define the maximum amount of workers for downloading. By default are 20 and its fast enough
+`-w` **Optional** - Maximum amount of workers for downloading. By default it's 20 which is usually fast enough
 
 By default displays the progress bar for downloaded files.
 
