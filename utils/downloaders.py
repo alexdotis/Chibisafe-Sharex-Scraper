@@ -98,9 +98,7 @@ class Downloader:
         """Download the content of given URL and store it in a file."""
 
         data = await self.download_file(url, session, headers=headers, show_progress=show_progress)
-
         filename = url.split("/")[-1]
-
         await self.store_file(data, filename)
 
     async def download_all(
@@ -128,7 +126,7 @@ class Downloader:
         """Download the content of all links and save them as files."""
 
         self.folder.mkdir(exist_ok=True)
-
+        
         async with aiohttp.ClientSession() as session:
             await self.download_all(self.links, session, headers=headers, show_progress=show_progress)
 
@@ -152,11 +150,9 @@ class BunkrDownloader(Downloader):
         """
 
         # Make a singleton value so that we can work on iterable that
-
         # would contain None objects as well.
 
         FILLVALUE = object()
-
         iters = (iter(it), ) * chunk_size
 
         for tup in itertools.zip_longest(*iters, fillvalue=FILLVALUE):
