@@ -135,11 +135,8 @@ class SharexScraper(Scraper):
     def previous_page_url(self) -> Optional[str]:
 
         # TODO: Implement this (even though it may not be needed at the moment
-
         # since we have next_page_url, it kind of makes sense to have previous
-
         # page too, you never know what you'll want to do with the class eventually
-
         # (or if it's a library, what others will want to do with it)
 
         raise NotImplementedError
