@@ -4,10 +4,10 @@ Simple Script written in Python for download galleries of images / videos
 
 # Supported links:
 
-- <cyberdrop.me>
-- <bunkr.is>
-- <pixl.is>
-- <putme.ga>
+- <https://cyberdrop.me/>
+- <https://bunkr.is/>
+- <https://pixl.is/>
+- <https://putme.ga/>
 
 # Installation
 
