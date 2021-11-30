@@ -87,7 +87,7 @@ def parse_args() -> argparse.Namespace:
     return args
 
 
-async def main():
+async def main() -> None:
     args = parse_args()
     if args.url:
         scrapper = get_scrapper(args.url)

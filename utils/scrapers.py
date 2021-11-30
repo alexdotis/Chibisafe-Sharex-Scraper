@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
-from typing import Iterable, Iterator, Optional, Set
+from typing import Iterable, Iterator, Optional, Set, Type
+from types import TracebackType
 from urllib.parse import urlparse
 import requests
 from bs4 import BeautifulSoup
@@ -17,7 +18,7 @@ class Scraper(ABC):
     def __enter__(self) -> 'Scraper':
         return self
 
-    def __exit__(self, exc_type, exc_val, exc_tb) -> None:
+    def __exit__(self, exc_type: Type[Exception], exc_val: Exception, exc_tb: TracebackType) -> None:
         self.session.close()
 
     def get_soup(self) -> BeautifulSoup:

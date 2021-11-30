@@ -2,7 +2,7 @@ import asyncio
 import itertools
 from functools import wraps
 from pathlib import Path
-from typing import Callable, Iterable, List, Optional, Tuple, Type, TypeVar, Union, cast
+from typing import Any, Callable, Iterable, List, Optional, Tuple, Type, TypeVar, Union, cast
 from urllib.parse import urljoin, urlparse
 import aiofiles
 import aiohttp
@@ -24,7 +24,7 @@ def retry(
 ) -> Callable:
     def inner(func: T_Func) -> T_Func:
         @wraps(func)
-        async def wrapper(*args, **kwargs):
+        async def wrapper(*args, **kwargs) -> Any:
             times_tried = 0
             while True:
                 try:
