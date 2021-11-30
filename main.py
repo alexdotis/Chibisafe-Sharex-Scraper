@@ -84,7 +84,6 @@ def parse_args() -> argparse.Namespace:
         if not urlparse(args.url).netloc in SUPPORTED_URLS:
             logging.error(f'Unsupported URL:{args.url}')
             raise ValueError('Unsupported URL link!')
-
     return args
 
 

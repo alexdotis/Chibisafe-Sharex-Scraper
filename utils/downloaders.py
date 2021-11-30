@@ -130,7 +130,6 @@ class BunkrDownloader(Downloader):
         """Iterate over tuples of the iterable of size `chunk_size` at a time.
 
         If the elements can't be evenely split, the last tuple will be
-
         shrunk to accommodate the rest of the elements.
         """
         # Make a singleton value so that we can work on iterable that
@@ -170,7 +169,6 @@ class BunkrDownloader(Downloader):
         """Download the data from all given links and store them into corresponding files.
 
         We override this method to only make requests to 2 links at a time,
-
         since bunkr.is can't handle more traffic and causes errors.
         """
         chunked_links = self.pairwise_skipping(self.links, chunk_size=2)

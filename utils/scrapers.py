@@ -38,7 +38,6 @@ class Scraper(ABC):
 
         Raises:
             ValueError: Url is not in sets
-
         Yields:
             Iterator[Set[str]]
         """
