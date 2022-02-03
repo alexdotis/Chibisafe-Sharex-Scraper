@@ -189,6 +189,7 @@ def get_downloaders(urls: Iterable[str], folder: Path, max_workers: int) -> List
         'bunkr.is': BunkrDownloader,
         'pixl.is': Downloader,
         'putme.ga': Downloader,
+        'putmega.com':Downloader,
         'cyberdrop.to': Downloader
     }
     downloader_links = {}
