@@ -12,7 +12,8 @@ logging.basicConfig(
     format='%(asctime)s:%(levelname)s:%(module)s:%(filename)s:%(lineno)d:%(message)s'
 )
 
-SUPPORTED_URLS = {'cyberdrop.me', 'bunkr.is', 'pixl.is', 'putme.ga'}
+SUPPORTED_URLS = {'cyberdrop.me', 'bunkr.is', 'pixl.is', 'putme.ga', 'putmega.com', 'cyberdrop.to'}
+
 
 FILE_FORMATS = {
     'Images': {
